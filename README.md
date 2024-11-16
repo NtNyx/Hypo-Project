@@ -16,7 +16,7 @@ class Sensor:
         self.full_mask_area=abs(self.kordinat2.x-self.kordinat1.x)
         cv2.rectangle(self.mask,(self.kordinat1.x,self.kordinat1.y),(self.kordinat2.x,self.kordinat2.y),(255),thickness=cv2.FILLED)
         self.stuation=False
-        self.car_number_detected=0
+        self.hypo_rbc_detected=0
 
 
 Sensor1 = Sensor(Kordinat(1, 425), Kordinat(1080, 430), 500, 1080)
